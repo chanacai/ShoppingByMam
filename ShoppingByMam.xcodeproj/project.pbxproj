@@ -12,6 +12,7 @@
 		3C700C572265AA45009E8A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C700C552265AA45009E8A36 /* Main.storyboard */; };
 		3C700C592265AA46009E8A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C700C582265AA46009E8A36 /* Assets.xcassets */; };
 		3C700C5C2265AA46009E8A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C700C5A2265AA46009E8A36 /* LaunchScreen.storyboard */; };
+		3C700C642265BC12009E8A36 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C700C632265BC12009E8A36 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3C700C582265AA46009E8A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C700C5B2265AA46009E8A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C700C5D2265AA46009E8A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C700C632265BC12009E8A36 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3C700C512265AA45009E8A36 /* AppDelegate.swift */,
 				3C700C532265AA45009E8A36 /* ViewController.swift */,
 				3C700C552265AA45009E8A36 /* Main.storyboard */,
+				3C700C632265BC12009E8A36 /* RegisterViewController.swift */,
 				3C700C582265AA46009E8A36 /* Assets.xcassets */,
 				3C700C5A2265AA46009E8A36 /* LaunchScreen.storyboard */,
 				3C700C5D2265AA46009E8A36 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C700C642265BC12009E8A36 /* RegisterViewController.swift in Sources */,
 				3C700C542265AA45009E8A36 /* ViewController.swift in Sources */,
 				3C700C522265AA45009E8A36 /* AppDelegate.swift in Sources */,
 			);
