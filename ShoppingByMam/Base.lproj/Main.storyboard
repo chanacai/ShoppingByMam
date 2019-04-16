@@ -123,9 +123,34 @@
                     <view key="view" contentMode="scaleToFill" id="a1i-u1-DS1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-k9-RYo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9170612829" green="0.57342061769999997" blue="0.11987631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.28909537200000002" green="0.355120033" blue="0.61042076349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="register" id="ppt-xl-x50">
+                                        <barButtonItem key="leftBarButtonItem" image="baseline_arrow_back_ios_black_36pt_1x" id="SS4-CX-6Ki">
+                                            <connections>
+                                                <action selector="backBotton:" destination="q6X-sK-81j" id="Vj6-j9-34K"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="baseline_cloud_upload_black_36pt_2x" id="wFD-KZ-XEN">
+                                            <connections>
+                                                <action selector="uploadButton:" destination="q6X-sK-81j" id="5oL-F2-VKX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CLr-MG-GAn"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackToAuthen" id="iK7-04-quM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1me-QF-sE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,6 +158,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baseline_arrow_back_ios_black_36pt_1x" width="36" height="36"/>
+        <image name="baseline_cloud_upload_black_36pt_2x" width="36" height="36"/>
         <image name="logo" width="170" height="170"/>
         <image name="wallpaper" width="170" height="256"/>
     </resources>
