@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-k9-RYo">
-                                <rect key="frame" x="0.0" y="44" width="0.0" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" red="0.9170612829" green="0.57342061769999997" blue="0.11987631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.28909537200000002" green="0.355120033" blue="0.61042076349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
@@ -189,6 +189,9 @@
                         <viewLayoutGuide key="safeArea" id="CLr-MG-GAn"/>
                     </view>
                     <connections>
+                        <outlet property="nameTextField" destination="XAv-H7-Fgt" id="A8P-du-AqY"/>
+                        <outlet property="passwordTextField" destination="WZT-f1-0hf" id="WGs-hu-QDS"/>
+                        <outlet property="userTextField" destination="JxR-Z0-DKY" id="2Th-fS-gvw"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackToAuthen" id="iK7-04-quM"/>
                     </connections>
                 </viewController>
