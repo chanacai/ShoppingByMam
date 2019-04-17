@@ -75,7 +75,7 @@ class RegisterViewController: UIViewController {
             myAlert(titleString: "Have Space", messageString: "Please Fill Every Blank")
         }else{
             print("NO Space")
-            
+            uploadDataToSever(name: name, user: user, password: password)
         }
         
         
@@ -87,6 +87,58 @@ class RegisterViewController: UIViewController {
         
         
     } // uploadButton
+    
+ //   Process Upload Data to Sever
+    func uploadDataToSever(name: String,user: String,password: String) -> Void {
+        
+        let urlString = "https://www.androidthai.in.th/ssm/addDataSam.php?isAdd=true&Name=\(name)&User=\(user)&Password=\(password)"
+        
+        let url = URL(string: urlString)
+        
+        let request = NSMutableURLRequest(url: url!)
+        let task =  URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if error != nil {
+                print("Have Error")
+            } else {
+                
+                if let testReadAble = data {
+                    
+                    let canReadData = NSString(data: testReadAble, encoding: String.Encoding.utf8.rawValue)
+                    print("canReadData ==>> \(String(describing: canReadData))")
+                    
+                    let myResult = canReadData!
+                    if myResult == "true" {
+                        
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "BackToAuthen", sender: nil)
+                        }
+                        
+                        
+                        
+                        
+                        
+                    }
+                    
+                    
+                    
+                } else {
+                    print("Cannot Read Able")
+                } // if2
+                
+            }// if1
+        } //End task
+        task.resume()
+        
+    } //uploadData
+    
+    
+    
+    
+    
+    
+    
+    
+    
       // myAlert is void Type Function ก็คือเมททอดที่ทำงานแล้วไม่คืนค่าให้คนสั่ง
     func myAlert(titleString: String,messageString: String) -> Void {
         
