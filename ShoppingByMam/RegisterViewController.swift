@@ -72,8 +72,10 @@ class RegisterViewController: UIViewController {
         
         if ((name.count == 0) || (user.count == 0) || (password.count == 0)) {
             print("Have Space")
+            myAlert(titleString: "Have Space", messageString: "Please Fill Every Blank")
         }else{
             print("NO Space")
+            
         }
         
         
@@ -84,7 +86,33 @@ class RegisterViewController: UIViewController {
   
         
         
-    }
+    } // uploadButton
+      // myAlert is void Type Function ก็คือเมททอดที่ทำงานแล้วไม่คืนค่าให้คนสั่ง
+    func myAlert(titleString: String,messageString: String) -> Void {
+        
+        
+     //  Creat Alert Obj
+        let objAlert = UIAlertController(title: titleString, message: messageString, preferredStyle: UIAlertController.Style.alert)
+        
+    //    creat button alert
+        
+        objAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            objAlert.dismiss(animated: true, completion: nil)
+        }))
+        
+        present(objAlert,animated: true,completion: nil)
+        
+        
+        
+        
+        
+        
+        
+    } //
+    
+    
+    
+    
     
     
     
